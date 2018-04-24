@@ -1,4 +1,4 @@
-function contains<T>(arr: Array<T>, item: T, start = 0): boolean {
+function contains<T>(arr: Array<T>, item: T, start: number = 0): boolean {
     for (let i = start; i < arr.length; i++) {
         if (arr[i] === item) {
             return true;
@@ -7,5 +7,5 @@ function contains<T>(arr: Array<T>, item: T, start = 0): boolean {
     return false;
 }
 
-let ss: Boolean = contains([1, 2, 3, 4], 3,3);
+let ss: Boolean = contains([1, 2, 3, 4], 3, 3);
 console.log(ss);
